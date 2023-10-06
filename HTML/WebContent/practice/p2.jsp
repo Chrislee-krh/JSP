@@ -10,7 +10,7 @@
 		<%
 		for(int i=1;i<=30;i++){
 		%>
-			<a href="p2_res.jsp">학생 클릭창으로 이동</a>
+			<a href="p2_res.jsp?num=<%=i%>">학생 클릭창으로 이동</a>
 		<%
 		out.println(i+"번 학생");
 		}

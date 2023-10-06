@@ -6,7 +6,7 @@
 	String date = null;	
 	if(show != null){
 		for(int i=0; i<show.length; i++){
-			if(show[i].getName().equals("show")){
+			if(show[i].getName().equals("today")){
 				date= show[i].getValue();
 			}
 		}
@@ -30,7 +30,7 @@
 		<!-- 쿠키 값이 없으면, "쿠키값이 없습니다."
 		show 쿠키가 있으면, "마지막 접속 날짜: " 출력
 		 -->
-		 <%if(date!=null) {%>
+		 <%if(date==null) {%>
 		 	쿠키가 없습니다.
 		 <%} else { %>
 		 	마지막 접속 날짜: <%=date %>

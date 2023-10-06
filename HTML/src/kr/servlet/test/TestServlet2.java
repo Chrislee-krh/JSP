@@ -19,7 +19,7 @@ public class TestServlet2 extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("web.xl을 이용한 URL Mapping");
+		System.out.println("web.xml을 이용한 URL Mapping");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

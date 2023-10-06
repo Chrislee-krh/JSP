@@ -8,7 +8,7 @@
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyy년MM월dd일");
 	String today = sdf.format(date);
 	
-	Cookie show = new Cookie("user_id", today);
+	Cookie show = new Cookie("today", today);
 	
 	response.addCookie(show);
 	

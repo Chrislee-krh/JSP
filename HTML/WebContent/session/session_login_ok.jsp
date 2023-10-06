@@ -20,10 +20,20 @@
 			session.setAttribute("user_name", name);
 			response.sendRedirect("session_login_welcome.jsp");
 		} else {
-			response.sendRedirect("session_login.jsp");
+			//response.sendRedirect("session_login.jsp");
+		
+	%>
+	<script>
+		check(); //함수 호출. 자바스크립트는 선언되면 앞 뒤 어디든 상관이 없이 사용 가능
+		function check(){
+			alert("로그인에 실패");
+			history.go(-1); //뒤로 가기(history객체는 브라우저에 있는 접속 페이지)
 		}
-	}
-%>    
+	</script>
+	<%
+	}}
+	%>
+    
 <!DOCTYPE html>
 <html>
 	<head>
